@@ -1,0 +1,30 @@
+{
+  "name": "pdv-electron",
+  "version": "1.0.0",
+  "description": "Sistema de PDV para pequenos e médios estabelecimentos",
+  "main": "main.js",
+  "scripts": {
+    "start": "yarn electron .",
+    "react-start": "yarn webpack serve --config webpack.config.js",
+    "dev": "concurrently \"yarn vite\" \"yarn start\"",
+    "vite": "cd src/renderer && yarn dev",
+    "vite:install": "cd src/renderer && yarn"
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "pdv",
+    "ponto de venda"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^25.0.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.30.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

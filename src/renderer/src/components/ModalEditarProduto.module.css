@@ -1,0 +1,90 @@
+.modal-bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  padding: 32px 28px 24px 28px;
+  min-width: 340px;
+  max-width: 95vw;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+}
+
+.modal h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  color: #222;
+  font-weight: 700;
+}
+
+.modal label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #333;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.modal input, .modal select {
+  padding: 7px 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  background: #fafbfc;
+  transition: border-color 0.2s;
+}
+
+.modal input:focus, .modal select:focus {
+  border-color: #007bff;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.modal-actions button {
+  padding: 8px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.modal-actions button:first-child {
+  background: #007bff;
+  color: #fff;
+}
+
+.modal-actions button:last-child {
+  background: #eee;
+  color: #222;
+}
+
+@media (max-width: 480px) {
+  .modal {
+    min-width: 90vw;
+    padding: 18px 6vw 16px 6vw;
+  }
+}

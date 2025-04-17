@@ -1,0 +1,139 @@
+.estoque-wrapper {
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #0001;
+  padding: 32px 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.estoque-title {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 1.5em;
+  color: #222;
+}
+
+.estoque-controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 18px;
+  align-items: center;
+}
+
+.estoque-busca, .estoque-categoria {
+  font-size: 1em;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.estoque-btn-novo {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.estoque-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+.estoque-tabela th, .estoque-tabela td {
+  padding: 10px 8px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.estoque-produto-nome {
+  font-weight: 500;
+}
+
+.estoque-produto-cat {
+  color: #888;
+  font-size: 0.95em;
+}
+
+.estoque-ok {
+  color: #2e7d32;
+  font-weight: 500;
+  background: #e8f5e9;
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+.estoque-alerta {
+  color: #d32f2f;
+  font-weight: 500;
+  background: #ffebee;
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+.estoque-baixo {
+  background: #fff6f6;
+}
+
+.estoque-acao {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-right: 8px;
+}
+
+.estoque-acao.deletar {
+  color: #d32f2f;
+}
+
+.estoque-vazio {
+  text-align: center;
+  color: #888;
+  font-size: 1.1em;
+  padding: 24px 0;
+}
+
+.estoque-paginacao {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.estoque-paginacao button {
+  background: #f3f4f6;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .estoque-wrapper {
+    min-width: 0;
+    padding: 12px 2px;
+  }
+  .estoque-title {
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+  }
+  .estoque-controls {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .estoque-btn-novo {
+    margin-left: 0;
+  }
+}
