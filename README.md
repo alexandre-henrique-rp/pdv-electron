@@ -66,6 +66,10 @@ O sistema será aberto em uma janela Electron. Você pode usar normalmente mesmo
 ## Contribuição
 Pull requests são bem-vindos! Sinta-se à vontade para sugerir melhorias ou reportar problemas.
 
+## Histórico de Atualizações
+
+- 18/04/2025: Atualizações e melhorias realizadas, incluindo ajustes e correções nas telas de fornecedores e navegação.
+
 ---
 
 > Projeto desenvolvido para facilitar a gestão de vendas e estoque de pequenos negócios, com foco em praticidade e robustez.
